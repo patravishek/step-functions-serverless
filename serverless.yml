@@ -1,0 +1,30 @@
+service: step-functions-serverless
+
+# The `provider` block defines where your service will be deployed
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+# The `functions` block defines what code to deploy
+functions:
+  helloWordld:
+    handler: ApiEndpoint
+  helloWorld:
+    handler: ApiEndpoint.helloWorld
+    # The `events` block defines how to trigger the handler.helloWorld code
+    events:
+      - http:
+          path: hello-world
+          method: get
+          cors: true
+  goodbyeWorld:
+    handler: ApiEndpoint.goodbyeWorld
+    events:
+      - http:
+          path: good-bye
+          method: get
+          cors: true
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-typescript

@@ -1,0 +1,32 @@
+{
+  "name": "step-functions-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.55",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "serverless-offline": "^6.4.0",
+    "serverless-plugin-typescript": "^1.1.9",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patravishek/step-functions-serverless.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patravishek/step-functions-serverless/issues"
+  },
+  "homepage": "https://github.com/patravishek/step-functions-serverless#readme"
+}
